@@ -2620,8 +2620,8 @@ figcaption {
 
 .text {
   max-width: 65ch;
-  color: #fff;
-  font-size: 1em;
+  color: #000;
+  font-size: 1.2em;
   font-weight: 500;
 }
 
@@ -2864,7 +2864,7 @@ figcaption {
 
 .clip-text-hero {
   width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   display: flex;
   overflow: hidden;

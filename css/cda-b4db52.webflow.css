@@ -2514,7 +2514,7 @@ figcaption {
 }
 
 .speaker-image.twin-peaks {
-  background-image: url('../images/_DSC8441.webp');
+  background-image: url('../images/_DSC8544.webp');
   background-position: 0 0;
   background-size: cover;
 }
@@ -2637,6 +2637,10 @@ figcaption {
   text-transform: uppercase;
   font-style: normal;
   font-weight: 600;
+}
+
+.text.j {
+  color: #fff;
 }
 
 .slide-arrow {
@@ -2852,6 +2856,7 @@ figcaption {
 
 .hero__wrapper {
   height: 80vh;
+  text-align: center;
   background-image: linear-gradient(193deg, #000, rgba(0, 55, 255, .23)), url('../images/_DSC8428.webp');
   background-position: 0 0, 0 0;
   background-size: auto, cover;
@@ -2864,13 +2869,14 @@ figcaption {
 
 .clip-text-hero {
   width: 100%;
-  justify-content: flex-start;
+  text-align: center;
+  justify-content: center;
   align-items: center;
   display: flex;
   overflow: hidden;
 }
 
-.h1-2 {
+.clip-text-hero.j, .h1-2 {
   color: #fff;
   text-align: center;
 }
@@ -2919,6 +2925,7 @@ figcaption {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
+  position: relative;
 }
 
 .corporate__logo {
@@ -2971,7 +2978,7 @@ figcaption {
 }
 
 .architectural__item.image_1 {
-  background-image: url('../images/_DSC8393.webp');
+  background-image: url('../images/_DSC8441.webp');
   background-size: cover;
 }
 
@@ -4214,7 +4221,7 @@ figcaption {
 }
 
 .image-5 {
-  z-index: 10;
+  z-index: 0;
   border: 1px #bd7474;
   position: absolute;
   top: auto;

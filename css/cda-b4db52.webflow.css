@@ -1,3 +1,17 @@
+:root {
+  --spark-library-black: black;
+  --spark-library-foreground-interactive: #5532fa;
+  --spark-library-background--interactive: #f0ecfd;
+  --link: #fad1d2;
+  --spark-library-white: white;
+  --spark-library-foreground-interactive-hover: #1e116e;
+  --spark-library-border-default: rgba(0, 0, 0, .16);
+  --spark-library-foreground-tertiary: rgba(0, 0, 0, .56);
+  --spark-library-foreground-secondary: rgba(0, 0, 0, .76);
+  --spark-library-light-steel-purple: #a695fb;
+  --walsh-walsh-dark-green: #204f58;
+}
+
 .w-layout-grid {
   grid-row-gap: 16px;
   grid-column-gap: 16px;
@@ -2034,7 +2048,7 @@ figcaption {
   z-index: 2;
   width: 35px;
   height: 2px;
-  background-color: #000;
+  background-color: var(--spark-library-black);
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -2047,7 +2061,7 @@ figcaption {
 .spark-line-3.spark-simple-line {
   width: 12.75px;
   height: 3.3px;
-  background-color: #5532fa;
+  background-color: var(--spark-library-foreground-interactive);
   border-radius: 3px;
   margin-left: 18px;
   top: 38px;
@@ -2057,7 +2071,7 @@ figcaption {
   z-index: 1;
   width: 35px;
   height: 2px;
-  background-color: #000;
+  background-color: var(--spark-library-black);
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -2070,7 +2084,7 @@ figcaption {
 .spark-line-2.spark-simple-line {
   width: 24px;
   height: 3.3px;
-  background-color: #5532fa;
+  background-color: var(--spark-library-foreground-interactive);
   border-radius: 3px;
   top: 28px;
 }
@@ -2079,7 +2093,7 @@ figcaption {
   z-index: 2;
   width: 35px;
   height: 2px;
-  background-color: #000;
+  background-color: var(--spark-library-black);
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -2092,7 +2106,7 @@ figcaption {
 .spark-line-1.spark-simple-line {
   width: 24px;
   height: 3.3px;
-  background-color: #5532fa;
+  background-color: var(--spark-library-foreground-interactive);
   border-radius: 3px;
   top: 18px;
 }
@@ -2106,12 +2120,12 @@ figcaption {
 }
 
 .spark-simple-menu-button.w--open {
-  background-color: #f0ecfd;
+  background-color: var(--spark-library-background--interactive);
   border-radius: 8px;
 }
 
 .spark-nav-link {
-  color: #000;
+  color: var(--spark-library-black);
   text-align: center;
   border-radius: 8px;
   margin-left: 8px;
@@ -2124,9 +2138,9 @@ figcaption {
 }
 
 .spark-nav-link:hover {
+  background-color: var(--link);
   opacity: 1;
   color: #fff;
-  background-color: #fad1d2;
 }
 
 .spark-nav-link.w--current {
@@ -2140,7 +2154,7 @@ figcaption {
 }
 
 .spark-nav-link.spark-button {
-  color: #fff;
+  color: var(--spark-library-white);
   text-align: center;
   background-color: #000;
   border-style: none;
@@ -2153,20 +2167,20 @@ figcaption {
 }
 
 .spark-nav-link.spark-button:hover {
+  background-color: var(--link);
   opacity: 1;
-  color: #fff;
-  background-color: #fad1d2;
+  color: var(--spark-library-white);
 }
 
 .spark-nav-link.spark-button.w--current {
   opacity: .5;
-  color: #fff;
+  color: var(--spark-library-white);
 }
 
 .spark-button {
-  color: #fff;
-  background-color: #5532fa;
-  border: 1px solid #5532fa;
+  border: 1px solid var(--spark-library-foreground-interactive);
+  background-color: var(--spark-library-foreground-interactive);
+  color: var(--spark-library-white);
   border-radius: 8px;
   flex: none;
   padding: 16px;
@@ -2178,9 +2192,9 @@ figcaption {
 }
 
 .spark-button:hover {
+  border-color: var(--spark-library-foreground-interactive-hover);
+  background-color: var(--spark-library-foreground-interactive-hover);
   opacity: 1;
-  background-color: #1e116e;
-  border-color: #1e116e;
 }
 
 .spark-nav-menu {
@@ -2207,7 +2221,7 @@ figcaption {
 .spark-rounded-edge-navbar {
   z-index: 99;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--spark-library-white);
   border-radius: 0;
   margin-left: auto;
   margin-right: auto;
@@ -2227,8 +2241,8 @@ figcaption {
 .spark-social-link {
   width: 32px;
   height: 32px;
-  color: #5532fa;
-  background-color: #fff;
+  background-color: var(--spark-library-white);
+  color: var(--spark-library-foreground-interactive);
   border-radius: 8px;
   flex: none;
   justify-content: center;
@@ -2239,9 +2253,9 @@ figcaption {
 }
 
 .spark-social-link:hover {
+  background-color: var(--spark-library-foreground-interactive);
   opacity: 1;
-  color: #fff;
-  background-color: #5532fa;
+  color: var(--spark-library-white);
 }
 
 .spark-social-link-row {
@@ -2270,13 +2284,13 @@ figcaption {
 }
 
 .spark-footer-bottom {
-  background-color: #f0ecfd;
+  background-color: var(--spark-library-background--interactive);
   padding: 1rem 64px;
 }
 
 .spark-footer-bottom.spark-white-background {
+  background-color: var(--spark-library-white);
   color: #000;
-  background-color: #fff;
   padding-bottom: 1rem;
 }
 
@@ -2298,9 +2312,9 @@ figcaption {
 .spark-footer-link-with-icon {
   min-height: 48px;
   grid-column-gap: 12px;
-  color: #fff;
-  background-color: #5532fa;
-  border: 1px solid #5532fa;
+  border: 1px solid var(--spark-library-foreground-interactive);
+  background-color: var(--spark-library-foreground-interactive);
+  color: var(--spark-library-white);
   border-radius: 8px;
   align-items: center;
   padding: 12px 16px;
@@ -2314,18 +2328,18 @@ figcaption {
 
 .spark-footer-link-with-icon:hover {
   opacity: 1;
-  color: #1e116e;
+  color: var(--spark-library-foreground-interactive-hover);
 }
 
 .spark-footer-link-with-icon.spark-white-button {
-  color: #000;
-  background-color: #fff;
-  border-color: #fff;
+  border-color: var(--spark-library-white);
+  background-color: var(--spark-library-white);
+  color: var(--spark-library-black);
 }
 
 .spark-footer-link-with-icon.spark-white-button:hover {
+  background-color: var(--link);
   color: #363636;
-  background-color: #fad1d2;
 }
 
 .spark-flex-left {
@@ -2371,7 +2385,7 @@ figcaption {
 }
 
 .spark-section.spark-primary-bottom-border {
-  border-bottom: 1px #5532fa;
+  border-bottom: 1px none var(--spark-library-foreground-interactive);
   padding: 40px 60px 60px;
 }
 
@@ -3072,16 +3086,16 @@ figcaption {
 }
 
 .spark-form-success {
+  background-color: var(--link);
   text-align: center;
-  background-color: #fad1d2;
   border-radius: 8px;
   padding: 24px;
 }
 
 .spark-button-2 {
-  color: #fff;
-  background-color: #5532fa;
-  border: 1px solid #5532fa;
+  border: 1px solid var(--spark-library-foreground-interactive);
+  background-color: var(--spark-library-foreground-interactive);
+  color: var(--spark-library-white);
   border-radius: 8px;
   flex: none;
   padding: 16px;
@@ -3093,26 +3107,26 @@ figcaption {
 }
 
 .spark-button-2:hover {
+  border-color: var(--spark-library-foreground-interactive-hover);
+  background-color: var(--spark-library-foreground-interactive-hover);
   opacity: 1;
-  background-color: #1e116e;
-  border-color: #1e116e;
 }
 
 .spark-button-2.spark-full-width {
   width: 100%;
+  background-color: var(--spark-library-black);
   text-align: center;
-  background-color: #000;
   border-style: none;
 }
 
 .spark-button-2.spark-full-width:hover {
-  background-color: #fad1d2;
+  background-color: var(--link);
 }
 
 .spark-input {
   height: 48px;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, .16);
+  border: 1px solid var(--spark-library-border-default);
+  background-color: var(--spark-library-white);
   border-radius: 8px;
   margin-bottom: 32px;
   padding: 8px 16px;
@@ -3120,15 +3134,15 @@ figcaption {
 }
 
 .spark-input:focus {
-  border-color: #5532fa;
+  border-color: var(--spark-library-foreground-interactive);
 }
 
 .spark-input::-ms-input-placeholder {
-  color: rgba(0, 0, 0, .56);
+  color: var(--spark-library-foreground-tertiary);
 }
 
 .spark-input::placeholder {
-  color: rgba(0, 0, 0, .56);
+  color: var(--spark-library-foreground-tertiary);
 }
 
 .spark-input.spark-message-input {
@@ -3144,7 +3158,7 @@ figcaption {
 }
 
 .spark-foreground-secondary {
-  color: rgba(0, 0, 0, .76);
+  color: var(--spark-library-foreground-secondary);
 }
 
 .spark-centered-900 {
@@ -3299,9 +3313,9 @@ figcaption {
 }
 
 .spark-button-3 {
-  color: #fff;
+  border: 1px none var(--spark-library-foreground-interactive);
+  color: var(--spark-library-white);
   background-color: #000;
-  border: 1px #5532fa;
   border-radius: 8px;
   flex: none;
   padding: 16px;
@@ -3313,9 +3327,9 @@ figcaption {
 }
 
 .spark-button-3:hover {
+  border-color: var(--spark-library-foreground-interactive-hover);
+  background-color: var(--spark-library-foreground-interactive-hover);
   opacity: 1;
-  background-color: #1e116e;
-  border-color: #1e116e;
 }
 
 .spark-button-3.button {
@@ -3324,7 +3338,7 @@ figcaption {
 }
 
 .spark-button-3.button:hover {
-  background-color: #fad1d2;
+  background-color: var(--link);
 }
 
 .spark-tiny-icon {
@@ -3336,7 +3350,8 @@ figcaption {
 
 .spark-lightbox-button {
   grid-column-gap: 16px;
-  background-color: #f0ecfd;
+  background-color: var(--spark-library-background--interactive);
+  box-shadow: inset 0 0 0 1.5px var(--spark-library-foreground-interactive);
   border-radius: 8px;
   align-items: center;
   padding: 16px 24px;
@@ -3345,13 +3360,12 @@ figcaption {
   text-decoration: none;
   transition: background-color .15s, color .15s;
   display: flex;
-  box-shadow: inset 0 0 0 1.5px #5532fa;
 }
 
 .spark-lightbox-button:hover {
+  background-color: var(--spark-library-foreground-interactive);
   opacity: 1;
-  color: #fff;
-  background-color: #5532fa;
+  color: var(--spark-library-white);
 }
 
 .spark-flex-row-2 {
@@ -3504,7 +3518,7 @@ figcaption {
 
 .spark-faq-dropdown.w--open {
   width: 100%;
-  background-color: #f0ecfd;
+  background-color: var(--spark-library-background--interactive);
   border-radius: 0 0 8px 8px;
   padding: 0;
   font-size: 1.25rem;
@@ -3558,8 +3572,8 @@ figcaption {
 
 .spark-faq-button {
   width: 100%;
-  color: #000;
-  background-color: #fff;
+  background-color: var(--spark-library-white);
+  color: var(--spark-library-black);
   border-radius: 8px;
   padding: 24px 32px;
   font-size: 1.5rem;
@@ -3569,36 +3583,40 @@ figcaption {
 }
 
 .spark-faq-button:hover {
-  color: #1e116e;
-  background-color: #fad1d2;
+  background-color: var(--link);
+  color: var(--spark-library-foreground-interactive-hover);
 }
 
 .spark-faq-button:focus {
+  outline-color: var(--spark-library-foreground-interactive);
   outline-offset: 0px;
-  outline: 4px solid #5532fa;
+  outline-width: 4px;
+  outline-style: solid;
 }
 
 .spark-faq-button.w--open {
-  background-color: #f0ecfd;
+  background-color: var(--spark-library-background--interactive);
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   transition-duration: .15s, .15s;
 }
 
 .spark-faq-button.w--open:focus {
+  outline-color: var(--spark-library-foreground-interactive);
   outline-offset: 0px;
-  outline: 1.5px #5532fa;
+  outline-width: 1.5px;
+  outline-style: none;
 }
 
 .spark-faq-expander {
   width: 102%;
-  border: 2px solid #000;
+  border: 2px solid var(--spark-library-black);
   border-radius: 8px;
   margin-bottom: 2rem;
 }
 
 .spark-secondary-paragraph {
-  color: rgba(0, 0, 0, .76);
+  color: var(--spark-library-foreground-secondary);
   margin-bottom: 64px;
 }
 
@@ -3798,9 +3816,9 @@ figcaption {
 }
 
 .spark-button-4 {
-  color: #fff;
-  background-color: #5532fa;
-  border: 1px solid #5532fa;
+  border: 1px solid var(--spark-library-foreground-interactive);
+  background-color: var(--spark-library-foreground-interactive);
+  color: var(--spark-library-white);
   border-radius: 8px;
   flex: none;
   padding: 16px;
@@ -3812,23 +3830,23 @@ figcaption {
 }
 
 .spark-button-4:hover {
+  border-color: var(--spark-library-foreground-interactive-hover);
+  background-color: var(--spark-library-foreground-interactive-hover);
   opacity: 1;
-  background-color: #1e116e;
-  border-color: #1e116e;
 }
 
 .spark-button-4.spark-dark-button {
+  border-style: none;
+  border-color: var(--spark-library-foreground-interactive-hover);
   color: #fff;
   background-color: #000;
-  border-style: none;
-  border-color: #1e116e;
   padding-left: 24px;
   padding-right: 24px;
 }
 
 .spark-button-4.spark-dark-button:hover {
+  background-color: var(--link);
   opacity: .5;
-  background-color: #fad1d2;
 }
 
 .spark-section-5 {
@@ -4089,7 +4107,7 @@ figcaption {
 }
 
 .error-message {
-  background-color: #fad1d2;
+  background-color: var(--link);
 }
 
 .bold-text-3 {
@@ -4632,7 +4650,7 @@ figcaption {
   .spark-line-3.spark-simple-line {
     width: 12.75px;
     height: 3.33px;
-    background-color: #5532fa;
+    background-color: var(--spark-library-foreground-interactive);
     border-radius: 3px;
     margin-left: 0;
     left: 18px;
@@ -4641,14 +4659,14 @@ figcaption {
   .spark-line-2.spark-simple-line {
     width: 24px;
     height: 3.33px;
-    background-color: #5532fa;
+    background-color: var(--spark-library-foreground-interactive);
     border-radius: 3px;
   }
 
   .spark-line-1.spark-simple-line {
     width: 24px;
     height: 3.33px;
-    background-color: #5532fa;
+    background-color: var(--spark-library-foreground-interactive);
     border-radius: 2px;
   }
 
@@ -4676,7 +4694,7 @@ figcaption {
 
   .spark-nav-menu {
     z-index: 99;
-    background-color: #fff;
+    background-color: var(--spark-library-white);
     border-bottom-right-radius: 42px;
     border-bottom-left-radius: 42px;
     margin-top: 0;
@@ -5519,7 +5537,12 @@ figcaption {
     font-size: 40px;
   }
 
+  .p.bottompad-20px {
+    text-align: center;
+  }
+
   .h1 {
+    text-align: center;
     font-size: 40px;
     line-height: 50px;
   }
@@ -5571,6 +5594,10 @@ figcaption {
     padding-right: 0;
   }
 
+  .spark-footer-text {
+    text-align: center;
+  }
+
   .spark-flex-row {
     align-items: flex-start;
   }
@@ -5586,6 +5613,11 @@ figcaption {
     padding-right: 20px;
   }
 
+  .spark-brand.spark-margin-bottom-32px, .spark-max-width-416 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .spark-section {
     padding: 64px 20px;
   }
@@ -5596,6 +5628,10 @@ figcaption {
 
   .spark-section h2 {
     font-size: 2.5rem;
+  }
+
+  .spark-section p {
+    text-align: center;
   }
 
   .product__name {
@@ -5659,7 +5695,17 @@ figcaption {
     column-gap: 10px;
   }
 
+  .image-2 {
+    top: -28%;
+    bottom: 0%;
+    left: auto;
+    right: -46%;
+  }
+
   .hero__wrapper {
+    background-image: linear-gradient(#000 4%, rgba(0, 55, 255, .23)), url('../images/_DSC8428.webp');
+    background-position: 0 0, 0 0;
+    background-size: auto, cover;
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -5832,6 +5878,12 @@ figcaption {
 
   .cf-faq-container {
     margin-bottom: 100px;
+  }
+
+  .div-block-9 {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
   }
 }
 

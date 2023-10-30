@@ -2416,6 +2416,10 @@ figcaption {
     display: none;
   }
 
+  .p.bottompad-20px {
+    text-align: center;
+  }
+
   .h1 {
     font-size: 40px;
     line-height: 45px;
@@ -2423,6 +2427,7 @@ figcaption {
 
   .hero-content-div {
     width: 100%;
+    align-items: center;
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -2443,7 +2448,7 @@ figcaption {
   .spark-line-3.spark-simple-line {
     width: 12.75px;
     height: 3.33px;
-    background-color: var(--spark-library-foreground-interactive);
+    background-color: var(--spark-library-black);
     border-radius: 3px;
     margin-left: 0;
     left: 18px;
@@ -2452,14 +2457,14 @@ figcaption {
   .spark-line-2.spark-simple-line {
     width: 24px;
     height: 3.33px;
-    background-color: var(--spark-library-foreground-interactive);
+    background-color: var(--spark-library-black);
     border-radius: 3px;
   }
 
   .spark-line-1.spark-simple-line {
     width: 24px;
     height: 3.33px;
-    background-color: var(--spark-library-foreground-interactive);
+    background-color: var(--spark-library-black);
     border-radius: 2px;
   }
 
@@ -2511,7 +2516,13 @@ figcaption {
 
   .spark-flexed-footer-column {
     min-width: 180px;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .spark-spread-footer-grid {
+    justify-items: center;
   }
 
   .spark-section {
@@ -2535,6 +2546,14 @@ figcaption {
   .slide-image {
     height: 50vh;
     min-height: 500px;
+  }
+
+  .image-2 {
+    display: none;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: auto;
   }
 
   .post-card-v5-heading {
@@ -2747,6 +2766,13 @@ figcaption {
     align-items: center;
   }
 
+  .spark-max-width-416 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
   .spark-spread-footer-grid {
     flex-direction: column;
     display: flex;
@@ -2755,6 +2781,10 @@ figcaption {
   .spark-section {
     padding-top: 88px;
     padding-bottom: 88px;
+  }
+
+  .spark-section p {
+    text-align: center;
   }
 
   .featured-slide__mask {
